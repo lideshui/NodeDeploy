@@ -1,0 +1,10 @@
+version: '3'
+services:
+  beihu:
+    image: blog:latest
+    container_name: blog
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9090:8080
